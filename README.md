@@ -8,7 +8,7 @@ For the multiples of five return “Buzz”
 For numbers that are multiples of both three and five return “FizzBuzz”.
 
 ### Notes:
-start with the minimal failing solution
-keep the three rules in mind and always write just enough code to make the test pass
-do not forget to refactor your code after each passing test
-write your assertions relating to the exact requirements
+* start with the minimal failing solution
+* keep the three rules in mind and always write just enough code to make the test pass
+* do not forget to refactor your code after each passing test
+* write your assertions relating to the exact requirements
