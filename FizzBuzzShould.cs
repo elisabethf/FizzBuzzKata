@@ -3,58 +3,26 @@ using Xunit;
 
 namespace FizzBuzzKata
 {
+
+    /// <summary>
+    /// Requirements:
+    /// FizzBuzzService.Print should accept a number and return a string.
+    /// If the number is a multiple of 3 it should return "Fizz"
+    /// If the number is a multiple of 5 it should return "Buzz"
+    /// If the number is a multiple of BOTH 3 and 5 it should return "FizzBuzz"
+    /// Any other numbers should result in the number being returned as a string, e.g. "2" 
+    /// </summary>
+
     public class FizzBuzzShould
     {
-        [Fact]
-        public void ReturnNumber()
+       [Fact]
+       public void ReturnNumber()
         {
             // Arrange
-            FizzBuzzService service = new FizzBuzzService();
 
             // Act
-            string result = service.Print(1);
 
             // Assert
-            result.Should().Be("1");
-        }
-
-        [Fact]
-        public void ReturnFizz_ForNumbersDivisibleBy_Three()
-        {
-            // Arrange
-            FizzBuzzService service = new FizzBuzzService();
-
-            // Act
-            string result = service.Print(3);
-
-            // Assert
-            result.Should().Be("fizz");
-        }
-
-        [Fact]
-        public void ReturnBuzz_ForNumbersDivisibleBy_Five()
-        {
-            // Arrange
-            FizzBuzzService service = new FizzBuzzService();
-
-            // Act
-            string result = service.Print(5);
-
-            // Assert
-            result.Should().Be("buzz");
-        }
-
-        [Fact]
-        public void ReturnFizzBuzz_ForNumbersDivisibleBy_Three_And_Five()
-        {
-            // Arrange
-            FizzBuzzService service = new FizzBuzzService();
-
-            // Act
-            string result = service.Print(15);
-
-            // Assert
-            result.Should().Be("fizzbuzz");
         }
     }
 }
