@@ -6,7 +6,7 @@ namespace FizzBuzzKata
     {
         public string Print(int number)
         {
-            return null;
+            throw new NotImplementedException();
         }
     }
 }
